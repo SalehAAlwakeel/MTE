@@ -156,7 +156,7 @@ export function SolutionsSlider({ items }: { items: Solution[] }) {
               >
                 <div
                   dir={rtl ? "rtl" : "ltr"}
-                  className="card h-full p-6 shadow-sm transition-[opacity,transform] duration-300 md:p-8"
+                  className="h-full rounded-[2rem] bg-white p-6 transition-[opacity,transform] duration-300 md:p-8"
                   style={{
                     opacity: active ? 1 : 0.55,
                     transform: `scale(${active ? 1 : 0.94})`,

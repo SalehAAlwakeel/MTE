@@ -81,8 +81,8 @@ function Scene({ children }: { children: React.ReactNode }) {
 export function HeroIllustration({ locale = "en" }: { locale?: Locale }) {
   return (
     <div className="float relative mx-auto flex h-[460px] w-full max-w-[520px] items-center justify-center">
-      <div className="relative h-[78%] w-[78%]">
-        <Image src="/ai-robot.png?v=5" alt={illustrationAlts[locale].hero} fill className="object-contain" sizes="(min-width: 1024px) 400px, 70vw" priority />
+      <div className="relative h-[78%] w-[78%] overflow-hidden rounded-[2rem]">
+        <Image src="/ai-robot.png?v=7" alt={illustrationAlts[locale].hero} fill className="rounded-[2rem] object-contain" sizes="(min-width: 1024px) 400px, 70vw" priority />
       </div>
     </div>
   );
@@ -114,8 +114,8 @@ export function SoftwareIllustration() {
 export function AiIllustration({ locale = "en" }: { locale?: Locale }) {
   return (
     <div className="relative mx-auto aspect-square w-full max-w-[460px]">
-      <div className="absolute inset-[12%]">
-        <Image src="/ai-robot.png?v=5" alt={illustrationAlts[locale].hero} fill className="object-contain" sizes="360px" />
+      <div className="absolute inset-[12%] overflow-hidden rounded-[2rem]">
+        <Image src="/ai-robot.png?v=7" alt={illustrationAlts[locale].hero} fill className="rounded-[2rem] object-contain" sizes="360px" />
       </div>
     </div>
   );
@@ -139,8 +139,8 @@ export function TransformIllustration({ locale = "en" }: { locale?: Locale }) {
 export function PrintIllustration({ locale = "en" }: { locale?: Locale }) {
   return (
     <div className="relative mx-auto aspect-square w-full max-w-[460px]">
-      <div className="absolute inset-[6%]">
-        <Image src="/3d-printing.png?v=1" alt={illustrationAlts[locale].print} fill className="object-contain" sizes="(min-width: 1024px) 400px, 70vw" />
+      <div className="absolute inset-[6%] overflow-hidden rounded-[2rem]">
+        <Image src="/3d-printing.png?v=1" alt={illustrationAlts[locale].print} fill className="rounded-[2rem] object-contain" sizes="(min-width: 1024px) 400px, 70vw" />
       </div>
     </div>
   );
@@ -193,8 +193,8 @@ export function IndustrialIllustration() {
 export function MaintenanceIllustration({ locale = "en" }: { locale?: Locale }) {
   return (
     <div className="relative mx-auto aspect-square w-full max-w-[460px]">
-      <div className="absolute inset-[8%]">
-        <Image src="/industrial-maintenance.png?v=1" alt={illustrationAlts[locale].maintenance} fill className="object-contain" sizes="(min-width: 1024px) 400px, 70vw" />
+      <div className="absolute inset-[8%] overflow-hidden rounded-[2rem]">
+        <Image src="/industrial-maintenance.png?v=1" alt={illustrationAlts[locale].maintenance} fill className="rounded-[2rem] object-contain" sizes="(min-width: 1024px) 400px, 70vw" />
       </div>
     </div>
   );
@@ -203,8 +203,8 @@ export function MaintenanceIllustration({ locale = "en" }: { locale?: Locale }) 
 export function CadIllustration({ locale = "en" }: { locale?: Locale }) {
   return (
     <div className="relative mx-auto aspect-square w-full max-w-[520px]">
-      <div className="absolute inset-[2%]">
-        <Image src="/cad-design.png?v=1" alt={illustrationAlts[locale].cad} fill className="object-contain" sizes="(min-width: 1024px) 480px, 80vw" />
+      <div className="absolute inset-[2%] overflow-hidden rounded-[2rem]">
+        <Image src="/cad-design.png?v=1" alt={illustrationAlts[locale].cad} fill className="rounded-[2rem] object-contain" sizes="(min-width: 1024px) 480px, 80vw" />
       </div>
     </div>
   );
@@ -213,8 +213,8 @@ export function CadIllustration({ locale = "en" }: { locale?: Locale }) {
 export function TeamScalingIllustration({ locale = "en" }: { locale?: Locale }) {
   return (
     <div className="relative mx-auto aspect-square w-full max-w-[460px]">
-      <div className="absolute inset-[6%]">
-        <Image src="/team-scaling.png?v=1" alt={illustrationAlts[locale]["team-scaling"]} fill className="object-contain" sizes="(min-width: 1024px) 400px, 70vw" />
+      <div className="absolute inset-[6%] overflow-hidden rounded-[2rem]">
+        <Image src="/team-scaling.png?v=1" alt={illustrationAlts[locale]["team-scaling"]} fill className="rounded-[2rem] object-contain" sizes="(min-width: 1024px) 400px, 70vw" />
       </div>
     </div>
   );
@@ -223,8 +223,8 @@ export function TeamScalingIllustration({ locale = "en" }: { locale?: Locale }) 
 export function MvpIllustration({ locale = "en" }: { locale?: Locale }) {
   return (
     <div className="relative mx-auto aspect-square w-full max-w-[520px]">
-      <div className="absolute inset-[2%]">
-        <Image src="/mvp-development.png?v=1" alt={illustrationAlts[locale].mvp} fill className="object-contain" sizes="(min-width: 1024px) 480px, 80vw" />
+      <div className="absolute inset-[2%] overflow-hidden rounded-[2rem]">
+        <Image src="/mvp-development.png?v=1" alt={illustrationAlts[locale].mvp} fill className="rounded-[2rem] object-contain" sizes="(min-width: 1024px) 480px, 80vw" />
       </div>
     </div>
   );
@@ -233,8 +233,8 @@ export function MvpIllustration({ locale = "en" }: { locale?: Locale }) {
 export function ConsultingIllustration({ locale = "en" }: { locale?: Locale }) {
   return (
     <div className="relative mx-auto aspect-square w-full max-w-[480px]">
-      <div className="absolute inset-[4%]">
-        <Image src="/technology-consulting.png?v=1" alt={illustrationAlts[locale].consulting} fill className="object-contain" sizes="(min-width: 1024px) 420px, 75vw" />
+      <div className="absolute inset-[4%] overflow-hidden rounded-[2rem]">
+        <Image src="/technology-consulting.png?v=1" alt={illustrationAlts[locale].consulting} fill className="rounded-[2rem] object-contain" sizes="(min-width: 1024px) 420px, 75vw" />
       </div>
     </div>
   );
@@ -243,8 +243,8 @@ export function ConsultingIllustration({ locale = "en" }: { locale?: Locale }) {
 export function SmartEcosystemsIllustration({ locale = "en" }: { locale?: Locale }) {
   return (
     <div className="relative mx-auto aspect-square w-full max-w-[480px]">
-      <div className="absolute inset-[4%]">
-        <Image src="/smart-ecosystems.png?v=1" alt={illustrationAlts[locale]["smart-ecosystems"]} fill className="object-contain" sizes="(min-width: 1024px) 420px, 75vw" />
+      <div className="absolute inset-[4%] overflow-hidden rounded-[2rem]">
+        <Image src="/smart-ecosystems.png?v=1" alt={illustrationAlts[locale]["smart-ecosystems"]} fill className="rounded-[2rem] object-contain" sizes="(min-width: 1024px) 420px, 75vw" />
       </div>
     </div>
   );
@@ -253,8 +253,8 @@ export function SmartEcosystemsIllustration({ locale = "en" }: { locale?: Locale
 export function DigitalTransformationIllustration({ locale = "en" }: { locale?: Locale }) {
   return (
     <div className="relative mx-auto aspect-square w-full max-w-[520px]">
-      <div className="absolute inset-[2%]">
-        <Image src="/digital-transformation.png?v=1" alt={illustrationAlts[locale]["digital-transformation"]} fill className="object-contain" sizes="(min-width: 1024px) 480px, 80vw" />
+      <div className="absolute inset-[2%] overflow-hidden rounded-[2rem]">
+        <Image src="/digital-transformation.png?v=1" alt={illustrationAlts[locale]["digital-transformation"]} fill className="rounded-[2rem] object-contain" sizes="(min-width: 1024px) 480px, 80vw" />
       </div>
     </div>
   );
@@ -263,8 +263,8 @@ export function DigitalTransformationIllustration({ locale = "en" }: { locale?: 
 export function CustomSoftwareIllustration({ locale = "en" }: { locale?: Locale }) {
   return (
     <div className="relative mx-auto aspect-square w-full max-w-[520px]">
-      <div className="absolute inset-[2%]">
-        <Image src="/custom-software.png?v=1" alt={illustrationAlts[locale]["custom-software"]} fill className="object-contain" sizes="(min-width: 1024px) 480px, 80vw" />
+      <div className="absolute inset-[2%] overflow-hidden rounded-[2rem]">
+        <Image src="/custom-software.png?v=1" alt={illustrationAlts[locale]["custom-software"]} fill className="rounded-[2rem] object-contain" sizes="(min-width: 1024px) 480px, 80vw" />
       </div>
     </div>
   );
@@ -287,8 +287,6 @@ export function SolutionImage({
   src,
   alt,
   className = "",
-  sizes = "(min-width: 1024px) 420px, 75vw",
-  outline = true,
 }: {
   src: string;
   alt: string;
@@ -296,13 +294,11 @@ export function SolutionImage({
   sizes?: string;
   outline?: boolean;
 }) {
+  const url = src.startsWith("http") ? src : `${src}${src.includes("?") ? "&" : "?"}v=plain`;
   return (
-    <div
-      className={`relative overflow-hidden rounded-[2rem] bg-white ${outline ? "border-[3px] border-ink" : ""} ${
-        className || "mx-auto aspect-square w-full max-w-[460px]"
-      }`}
-    >
-      <Image src={src} alt={alt} fill className="object-contain p-3" sizes={sizes} />
+    <div className={`picture-plain w-full ${className || "mx-auto max-w-[460px]"}`}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={url} alt={alt} className="mx-auto block h-auto w-full object-contain" />
     </div>
   );
 }

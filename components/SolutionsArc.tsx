@@ -126,7 +126,7 @@ export function SolutionsArc({ items }: { items: SolutionCard[] }) {
             return (
               <article
                 key={item.slug}
-                className="absolute left-0 top-0 card p-6 shadow-sm"
+                className="absolute left-0 top-0 p-6"
                 style={{
                   width: cardWidth,
                   transform: `rotateY(${angle}deg) translateZ(${radius}px) translate(-50%, -50%)`,
@@ -136,7 +136,7 @@ export function SolutionsArc({ items }: { items: SolutionCard[] }) {
                   backfaceVisibility: "hidden",
                 }}
               >
-                <SolutionImage src={item.image} alt={item.imageAlt} className="mb-4 aspect-[4/3] w-full rounded-2xl" sizes="280px" />
+                <SolutionImage src={item.image} alt={item.imageAlt} className="mb-4 aspect-[4/3] w-full" sizes="280px" />
                 <h3 className="text-xl font-semibold tracking-tight">{item.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-soft">{item.summary}</p>
                 <div className="mt-4 flex flex-wrap gap-1.5">

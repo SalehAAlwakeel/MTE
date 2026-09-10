@@ -87,6 +87,22 @@ select {
   transition: opacity 0.2s ease;
 }
 
+.btn-black.btn-header {
+  padding: 7px 11px;
+  font-size: 12px;
+  line-height: 1.15;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+@media (min-width: 640px) {
+  .btn-black.btn-header {
+    padding: 12px 20px;
+    font-size: inherit;
+    line-height: inherit;
+  }
+}
+
 .btn-black:hover {
   opacity: 0.88;
 }
@@ -113,6 +129,24 @@ select {
   background: #fff;
   border-radius: 28px;
   border: 1px solid rgba(10, 10, 10, 0.04);
+}
+
+.picture-plain {
+  overflow: hidden;
+  border-radius: 2rem;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: #fff !important;
+}
+
+.picture-plain img,
+.picture-plain span {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: #fff !important;
+  border-radius: 2rem;
 }
 
 .solutions-slider-viewport,

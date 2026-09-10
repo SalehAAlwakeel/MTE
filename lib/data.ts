@@ -5,7 +5,7 @@ export const company = {
   name: "Mechatronics Tech Engineering",
   shortName: "MTE",
   tagline: "From AI algorithms to precision CNC: we engineer your reality.",
-  email: "hello@mteksa.com",
+  email: "sales@mteksa.com",
   phones: [
     { display: "+966 59 266 2000", href: "tel:+966592662000" },
     { display: "+966 55 252 2913", href: "tel:+966552522913" },
@@ -17,12 +17,16 @@ export const company = {
   whatsappAr: "https://wa.me/966552522913",
   instagram: "https://www.instagram.com/",
   linkedin: "https://www.linkedin.com/",
-  addressLines: ["Imam Saud bin Abdulaziz Rd.", "Al-Mursalat", "Riyadh 12463, Saudi Arabia"],
-  mapsQuery: "Imam Saud bin Abdulaziz Rd, Al-Mursalat, Riyadh 12463, Saudi Arabia",
+  addressLines: [
+    "RHMA2523, 2523 Al Imam Saud Ibn Abdul Aziz Branch Rd, 8027",
+    "Al Mursalat",
+    "Riyadh 12463, Saudi Arabia",
+  ],
+  mapsQuery: "RHMA2523, 2523 Al Imam Saud Ibn Abdul Aziz Branch Rd, 8027, Al Mursalat, Riyadh 12463",
   mapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Imam+Saud+bin+Abdulaziz+Rd,+Al-Mursalat,+Riyadh+12463,+Saudi+Arabia",
+    "https://www.google.com/maps/search/?api=1&query=RHMA2523%2C+2523+Al+Imam+Saud+Ibn+Abdul+Aziz+Branch+Rd%2C+8027%2C+Al+Mursalat%2C+Riyadh+12463",
   mapsEmbed:
-    "https://maps.google.com/maps?q=Imam+Saud+bin+Abdulaziz+Rd,+Al-Mursalat,+Riyadh+12463,+Saudi+Arabia&z=16&output=embed",
+    "https://maps.google.com/maps?q=24.7550449,46.6818997&z=17&output=embed",
 };
 
 export const navServices = [

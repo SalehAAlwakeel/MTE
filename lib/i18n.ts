@@ -89,6 +89,7 @@ const en = {
     work: "Work",
     blog: "Blog",
     book: "Book a strategy call",
+    bookShort: "Book a call",
     quote: "Request a manufacturing quote",
     openMenu: "Open menu",
     language: "العربية",
@@ -114,18 +115,10 @@ const en = {
       "Eliminate the friction of disconnected vendors. MTE is your integrated technology partner: custom software, AI, digital transformation, and smart ecosystems — plus industrial 3D printing, CNC machining, and carbon fiber. One team from the first line of code to the finished part.",
     ctaStrategy: "Book your free strategy call",
     ctaQuote: "Request a manufacturing quote",
-    hookLabel: "The gap",
-    hookTitle: "Stop losing time to fragmented supply chains",
-    hookP1:
-      "When software, CAD, and manufacturing sit with different vendors, work stalls between the drawing and the floor — delays, mix-ups, weaker parts.",
-    hookP2:
-      "MTE is one ecosystem: AI and code through to CNC. We own the full product lifecycle.",
     unifyLabel: "One partner",
     unifyTitle: "Digital intelligence and physical power, under one roof",
     unifyText:
       "Software, staffed teams, managed platforms, and the shop that makes the part. Prototypes scale without switching vendors.",
-    ecoLabel: "What we do",
-    ecoTitle: "Our integrated solutions ecosystem",
     capabilitiesLabel: "How we deliver",
     capabilitiesTitle: "The software practice — plus the shop floor",
     capabilitiesText:
@@ -179,7 +172,11 @@ const en = {
   },
   company: {
     name: "Mechatronics Tech Engineering",
-    addressLines: ["Imam Saud bin Abdulaziz Rd.", "Al-Mursalat", "Riyadh 12463, Saudi Arabia"],
+    addressLines: [
+      "RHMA2523, 2523 Al Imam Saud Ibn Abdul Aziz Branch Rd, 8027",
+      "Al Mursalat",
+      "Riyadh 12463, Saudi Arabia",
+    ],
   },
   faq: {
     label: "Questions",
@@ -197,54 +194,12 @@ const en = {
     seeRelatedService: "See related service →",
     work: "Work",
   },
-  ecosystem: [
-    {
-      slug: "software",
-      title: "Custom software",
-      text: "Web, mobile, SaaS, and internal platforms built around your process — including cloud delivery and a path off software that can no longer move.",
-    },
-    {
-      slug: "team-scaling",
-      title: "Team scaling",
-      text: "Add vetted engineers, designers, and AI specialists to your squad when you need capacity. You keep the product; we add the seats.",
-    },
-    {
-      slug: "managed-services",
-      title: "Managed services",
-      text: "We run, monitor, and improve the applications and platforms you already depend on, so your team can leave firefighting behind.",
-    },
-    {
-      slug: "mvp",
-      title: "MVP development",
-      text: "A market-ready first version in weeks: enough product to learn from real users, without building the entire platform first.",
-    },
-    {
-      slug: "consulting",
-      title: "Technology consulting",
-      text: "Audits, architecture, and a sequenced roadmap. We will tell you what to keep, what to retire, and what is worth building.",
-    },
-    {
-      slug: "digital-transformation",
-      title: "Digital transformation",
-      text: "Modernize legacy systems and manual handoffs with software people will actually use — without freezing the business.",
-    },
-    {
-      slug: "smart-ecosystems",
-      title: "Smart ecosystems",
-      text: "Connected products, IoT, and plant-floor networks that turn machines, sensors, and software into one operational picture.",
-    },
-    {
-      slug: "3d-printing",
-      title: "3D printing & CNC",
-      text: "Rapid additive manufacturing, custom carbon fiber, and precision CNC for aerospace, automotive, and industrial work.",
-    },
-  ],
   offers: [
     {
       slug: "software",
-      title: "Custom software",
-      text: "Web, mobile, SaaS, and internal platforms built around your process — from the first screen to a system you can keep growing.",
-      tags: ["Web", "Mobile", "SaaS"],
+      title: "Custom software & AI",
+      text: "Custom software and AI machine learning built around your process — from the first screen to models that learn, and a system you can keep growing.",
+      tags: ["Custom software", "AI", "Machine learning"],
     },
     {
       slug: "smart-ecosystems",
@@ -374,6 +329,7 @@ const ar: Messages = {
     work: "أعمالنا",
     blog: "المدونة",
     book: "احجز جلسة استراتيجية",
+    bookShort: "احجز جلسة",
     quote: "اطلب عرض تصنيع",
     openMenu: "فتح القائمة",
     language: "EN",
@@ -399,17 +355,10 @@ const ar: Messages = {
       "أزل احتكاك المورّدين المنفصلين. MTE شريكك التقني المتكامل: برمجيات مخصصة، وذكاء اصطناعي، وتحول رقمي، ومنظومات ذكية — إضافة إلى الطباعة الصناعية ثلاثية الأبعاد وCNC وألياف الكربون. فريق واحد من أول سطر كود إلى القطعة النهائية.",
     ctaStrategy: "احجز جلستك الاستراتيجية مجاناً",
     ctaQuote: "اطلب عرض تصنيع",
-    hookLabel: "الفجوة",
-    hookTitle: "توقّف عن إضاعة الوقت في سلاسل توريد مجزأة",
-    hookP1:
-      "عندما تنفصل البرمجيات وCAD والتصنيع على مورّدين مختلفين، يتوقف العمل بين الرسم والأرض — تأخير، ولبس، وقطع أضعف.",
-    hookP2: "MTE منظومة واحدة: من الذكاء الاصطناعي والكود إلى CNC. نملك دورة حياة المنتج كاملة.",
     unifyLabel: "شريك واحد",
     unifyTitle: "الذكاء الرقمي والقوة المادية تحت سقف واحد",
     unifyText:
       "برمجيات، وفرق مدمجة، ومنصات مُدارة، والورشة التي تصنع القطعة. تنتقل النماذج إلى الإنتاج دون تبديل مورّد.",
-    ecoLabel: "ماذا نفعل",
-    ecoTitle: "منظومة الحلول المتكاملة",
     capabilitiesLabel: "كيف نسلّم",
     capabilitiesTitle: "ممارسة البرمجيات — ومعها أرض المصنع",
     capabilitiesText:
@@ -461,7 +410,11 @@ const ar: Messages = {
   },
   company: {
     name: "ميكاترونكس تك للهندسة",
-    addressLines: ["طريق الإمام سعود بن عبدالعزيز", "المرسلات", "الرياض 12463، المملكة العربية السعودية"],
+    addressLines: [
+      "RHMA2523، 2523 طريق الإمام سعود بن عبدالعزيز الفرعي، 8027",
+      "حي المرسلات",
+      "الرياض 12463، المملكة العربية السعودية",
+    ],
   },
   faq: {
     label: "أسئلة",
@@ -479,54 +432,12 @@ const ar: Messages = {
     seeRelatedService: "شاهد الخدمة المرتبطة ←",
     work: "أعمالنا",
   },
-  ecosystem: [
-    {
-      slug: "software",
-      title: "البرمجيات المخصصة",
-      text: "منصات ويب وموبايل وسحابة وأنظمة داخلية تُبنى حول عمليتك — بما في ذلك التسليم السحابي ومسار للخروج من برمجيات لم تعد تتحرك.",
-    },
-    {
-      slug: "team-scaling",
-      title: "توسيع الفريق",
-      text: "أضف مهندسين ومصممين ومتخصصي ذكاء اصطناعي معتمدين إلى فريقك عندما تحتاج سعة. المنتج يبقى لك؛ نحن نضيف المقاعد.",
-    },
-    {
-      slug: "managed-services",
-      title: "الخدمات المُدارة",
-      text: "نشغّل ونراقب ونحسّن التطبيقات والمنصات التي تعتمد عليها، كي يترك فريقك إطفاء الحرائق.",
-    },
-    {
-      slug: "mvp",
-      title: "تطوير MVP",
-      text: "نسخة أولى جاهزة للسوق في أسابيع: منتج كافٍ للتعلم من مستخدمين حقيقيين، دون بناء المنصة كاملة أولاً.",
-    },
-    {
-      slug: "consulting",
-      title: "الاستشارات التقنية",
-      text: "تدقيق ومعمارية وخارطة طريق متسلسلة. نقول لك ماذا تبقي، وماذا تُخرج، وماذا يستحق البناء.",
-    },
-    {
-      slug: "digital-transformation",
-      title: "التحول الرقمي",
-      text: "حدّث الأنظمة القديمة والتسليم اليدوي ببرمجيات يستخدمها الناس فعلاً — دون تجميد العمل.",
-    },
-    {
-      slug: "smart-ecosystems",
-      title: "المنظومات الذكية",
-      text: "منتجات متصلة وإنترنت أشياء وشبكات المصنع تحوّل الآلات والمستشعرات والبرمجيات إلى صورة تشغيل واحدة.",
-    },
-    {
-      slug: "3d-printing",
-      title: "الطباعة ثلاثية الأبعاد وCNC",
-      text: "تصنيع إضافي سريع، وألياف كربون حسب الطلب، وCNC دقيق لقطاعات الفضاء والسيارات والصناعة.",
-    },
-  ],
   offers: [
     {
       slug: "software",
-      title: "البرمجيات المخصصة",
-      text: "منصات ويب وموبايل وسحابة وأنظمة داخلية تُبنى حول عمليتك — من أول شاشة إلى نظام يمكنك الاستمرار في توسيعه.",
-      tags: ["ويب", "موبايل", "سحابة"],
+      title: "البرمجيات المخصصة والذكاء الاصطناعي",
+      text: "برمجيات مخصصة وذكاء اصطناعي وتعلم آلة تُبنى حول عمليتك — من أول شاشة إلى نماذج تتعلم، ونظام يمكنك الاستمرار في توسيعه.",
+      tags: ["برمجيات مخصصة", "ذكاء اصطناعي", "تعلم الآلة"],
     },
     {
       slug: "smart-ecosystems",

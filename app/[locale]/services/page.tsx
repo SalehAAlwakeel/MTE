@@ -45,7 +45,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
         {rest.map((item) => (
           <Link key={item.slug} href={lp(locale, `/services/${item.slug}`)} className="card grid items-center gap-6 p-6 shadow-sm md:grid-cols-[180px_1fr]">
             <div className="w-[180px]">
-              <SolutionImage src={item.image} alt={item.imageAlt} outline={false} className="aspect-square w-full rounded-[1.4rem]" sizes="180px" />
+              <SolutionImage src={item.image} alt={item.imageAlt} outline={false} className="aspect-square w-full" sizes="180px" />
             </div>
             <div>
               <h3 className="text-2xl font-semibold">{item.title}</h3>

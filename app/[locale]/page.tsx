@@ -37,35 +37,31 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <HeroIllustration locale={locale} />
       </section>
 
-      <section className="container-page py-16">
-        <p className="serif text-lg text-muted">{t.home.hookLabel}</p>
-        <h2 className="mt-2 max-w-4xl text-4xl font-semibold tracking-tight md:text-5xl">{t.home.hookTitle}</h2>
-        <div className="mt-8 grid gap-8 lg:grid-cols-2">
-          <p className="text-lg leading-8 text-soft">{t.home.hookP1}</p>
-          <p className="text-lg leading-8 text-soft">{t.home.hookP2}</p>
-        </div>
-      </section>
+      <section className="container-page py-10 md:py-16">
+        <div className="overflow-hidden rounded-[32px] border border-black/5 bg-white shadow-sm">
+          <article className="relative grid gap-6 border-b border-line bg-[#f4f6ff] p-8 md:grid-cols-[minmax(9rem,0.28fr)_1fr] md:gap-10 md:p-12">
+            <div className="absolute inset-y-8 start-0 w-1 rounded-full bg-accent md:inset-y-12" />
+            <div className="ps-4 md:ps-2">
+              <span className="text-xs font-semibold tracking-[0.2em] text-accent">01</span>
+              <p className="serif mt-2 text-lg text-muted">{t.home.unifyLabel}</p>
+            </div>
+            <div>
+              <h2 className="max-w-3xl text-3xl font-semibold tracking-tight md:text-4xl">{t.home.unifyTitle}</h2>
+              <p className="mt-6 max-w-2xl text-[17px] leading-8 text-soft">{t.home.unifyText}</p>
+            </div>
+          </article>
 
-      <section className="container-page py-12">
-        <p className="serif text-lg text-muted">{t.home.unifyLabel}</p>
-        <h2 className="mt-2 max-w-4xl text-4xl font-semibold tracking-tight md:text-5xl">{t.home.unifyTitle}</h2>
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-soft">{t.home.unifyText}</p>
-      </section>
-
-      <section className="container-page py-16">
-        <p className="serif text-lg text-muted">{t.home.capabilitiesLabel}</p>
-        <h2 className="mt-2 max-w-4xl text-4xl font-semibold tracking-tight md:text-5xl">{t.home.capabilitiesTitle}</h2>
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-soft">{t.home.capabilitiesText}</p>
-        <p className="serif mt-12 text-lg text-muted">{t.home.ecoLabel}</p>
-        <h2 className="mt-2 max-w-4xl text-4xl font-semibold tracking-tight md:text-5xl">{t.home.ecoTitle}</h2>
-        <div className="mt-10 grid gap-4 md:grid-cols-2">
-          {t.ecosystem.map((item) => (
-            <Link key={item.slug} href={lp(locale, `/services/${item.slug}`)} className="card p-7 shadow-sm transition hover:-translate-y-1">
-              <div className="text-xl font-semibold">{item.title}</div>
-              <p className="mt-3 leading-7 text-soft">{item.text}</p>
-              <span className="mt-5 inline-block font-semibold">{t.servicesPage.learn}</span>
-            </Link>
-          ))}
+          <article className="relative grid gap-6 p-8 md:grid-cols-[minmax(9rem,0.28fr)_1fr] md:gap-10 md:p-12">
+            <div className="absolute inset-y-8 start-0 w-1 rounded-full bg-accent/50 md:inset-y-12" />
+            <div className="ps-4 md:ps-2">
+              <span className="text-xs font-semibold tracking-[0.2em] text-accent">02</span>
+              <p className="serif mt-2 text-lg text-muted">{t.home.capabilitiesLabel}</p>
+            </div>
+            <div>
+              <h2 className="max-w-3xl text-3xl font-semibold tracking-tight md:text-4xl">{t.home.capabilitiesTitle}</h2>
+              <p className="mt-6 max-w-2xl text-[17px] leading-8 text-soft">{t.home.capabilitiesText}</p>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -93,18 +89,18 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             {t.home.allCases}
           </Link>
         </div>
-        <div className="mt-16 grid gap-8 border-t border-line pt-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-4">
           {[
             { to: getFeaturedOffers(locale).length, label: t.home.statCases },
             { to: services.length, label: t.home.statLines },
             { to: industrySolutions.length, label: t.home.statIndustries },
             { to: 1000, suffix: "+", label: t.home.statSpecialists },
           ].map((stat) => (
-            <div key={stat.label}>
-              <div className="text-5xl font-semibold tracking-tight md:text-6xl">
+            <div key={stat.label} className="rounded-[1.5rem] bg-white px-4 py-6 md:px-6 md:py-8">
+              <div className="whitespace-nowrap text-[1.85rem] font-semibold leading-none tracking-tight text-ink sm:text-4xl md:text-5xl lg:text-6xl">
                 <CounterFX to={stat.to} suffix={stat.suffix ?? ""} duration={1.8} thousands />
               </div>
-              <div className="mt-2 text-muted">{stat.label}</div>
+              <div className="mt-3 text-sm text-muted md:text-base">{stat.label}</div>
             </div>
           ))}
         </div>
